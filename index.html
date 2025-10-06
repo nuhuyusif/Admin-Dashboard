@@ -46,7 +46,7 @@
          dark:bg-gray-800 dark:text-gray-100
          rounded-s-lg p-5 flex flex-col gap-5 
          transform -translate-x-full lg:translate-x-0 
-         transition-transform duration-300 ease-in-out shadow-lg">
+         transition-transform duration-300 ease-in-out shadow-lg min-h-full">
 
     <div class="flex items-center gap-3">
       <span class="w-[44px] h-[44px] rounded-[10px] inline-grid place-items-center 
@@ -59,17 +59,17 @@
     <nav class="flex flex-col gap-3">
       <a class="flex items-center gap-[12px] p-[10px] rounded-[10px] font-semibold 
                 bg-[linear-gradient(90deg,rgba(37,99,235,0.12),rgba(124,58,237,0.06))] 
-                text-accent dark:text-indigo-600 hover:text-black" href="#"><span class="icon">🏠</span> Dashboard</a>
+                text-accent dark:text-indigo-600 hover:text-black" href="#"><img src="home.png" class="h-6 w-6"  > Dashboard</a>
       <a class="flex items-center gap-[12px] p-[10px] rounded-[10px] dark:text-gray-300 
-                font-semibold hover:bg-hove hover:text-black" href="#"><span class="icon">👥</span> Users</a>
+                font-semibold hover:bg-hove hover:text-black" href="#"><img src="users.png" class="h-6 w-6"> Users</a>
       <a class="flex items-center gap-[12px] p-[10px] rounded-[10px] dark:text-gray-300 
-                font-semibold hover:bg-hove hover:text-black" href="#"><span class="icon">📦</span> Products</a>
+                font-semibold hover:bg-hove hover:text-black" href="#"><img src="product.png" class="h-6 w-6"> Products</a>
       <a class="flex items-center gap-[12px] p-[10px] rounded-[10px] dark:text-gray-300 
-                font-semibold hover:bg-hove hover:text-black" href="#"><span class="icon">💳</span> Sales</a>
+                font-semibold hover:bg-hove hover:text-black" href="#"><img src="sales.png" class="h-6 w-6"> Sales</a>
       <a class="flex items-center gap-[12px] p-[10px] rounded-[10px] dark:text-gray-300 
-                font-semibold hover:bg-hove hover:text-black" href="#"><span class="icon">📊</span> Reports</a>
+                font-semibold hover:bg-hove hover:text-black" href="#"> <img src="report.png" class="h-6 w-6" > Reports</a>
       <a class="flex items-center gap-[12px] p-[10px] rounded-[10px] dark:text-gray-300 
-                font-semibold hover:bg-hove hover:text-black" href="#"><span class="icon">⚙️</span> Settings</a>
+                font-semibold hover:bg-hove hover:text-black" href="#"><img src="settings.png" class="h-6 w-6"> Settings</a>
     </nav>
 
     <div class="mt-auto dark:text-gray-300">
@@ -78,20 +78,20 @@
   </aside>
 
   <!-- Main content -->
-  <main class="flex-1 flex flex-col">
+  <main class="flex-1 flex flex-col size-full">
     <!-- Top navbar -->
     <header class="flex justify-between items-center px-4 py-3 
         border-b border-gray-200 dark:border-gray-700 
         bg-white text-gray-900 
         dark:bg-gray-800 dark:text-gray-100 
-        sticky top-0 z-30 transition-colors duration-300">
+        sticky top-0 z-30 transition-colors duration-300 w-full">
       <div class="flex items-center gap-3">
         <!-- menuBtn only on mobile -->
         <button id="openSidebar" class="lg:hidden bg-none border-none text-2xl p-2 rounded-lg cursor-pointer">☰</button>
         <div class="flex items-center bg-card bg-light-bg dark:bg-darkblue rounded-lg px-3 py-2 shadow-2xs border border-gray-700 ">
           <input type="search" placeholder="Search..." aria-label="Search" 
-                 class="bg-transparent outline-none text-sm text-light-muted dark:text-muted " />
-          <button class="ml-2 cursor-pointer">🔍</button>
+                 class="bg-transparent outline-none text-sm text-light-muted dark:text-muted w-[50%] " />
+          <button class=" cursor-pointer"><img src="search.png" class="h-6 w-6 relative left-16" ></button>
         </div>
       </div>
 
@@ -108,17 +108,17 @@
     </header>
 
     <!-- Page content -->
-    <section class="p-4 sm:p-6 dark:bg-gray-900">
-      <h2 class="mb-4 text-2xl font-bold dark:text-gray-100">Dashboard</h2>
+    <section class="p-4 sm:p-6 md:p-8 lg:p-10 xl:p-12 dark:bg-gray-900">
+      <h2 class="mb-4 text-xl font-bold dark:text-gray-100 sm:text-2xl md:text-3xl">Dashboard</h2>
       <!-- Stat cards -->
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4">
         <article class="bg-white text-gray-900 
         dark:bg-gray-800 dark:text-gray-100 
         rounded-xl shadow-2xl overflow-hidden transition-colors duration-300">
           <div class="flex items-center gap-3 p-5">
-            <div class="text-3xl">👥</div>
+            <img src="users.png" class="h-10 w-10 sm:h-10 sm:w-10 md:h-12 md:w-12">
             <div>
-              <div class="text-2xl font-semibold">8,421</div>
+              <div class="text-xl sm:text-2xl md:text-3xl font-semibold">8,421</div>
               <div class="text-sm text-light-muted dark:text-gray-300">Users</div>
             </div>
           </div>
@@ -129,9 +129,9 @@
         dark:bg-gray-800 dark:text-gray-100 
         rounded-xl shadow-2xl overflow-hidden transition-colors duration-300">
           <div class="flex items-center gap-3 p-5">
-            <div class="text-3xl">🛒</div>
+            <img src="sales.png" class="h-10 w-10 sm:h-10 sm:w-10 md:h-12 md:w-12">
             <div>
-              <div class="text-2xl font-semibold">1,234</div>
+              <div class="text-xl sm:text-2xl md:text-3xl font-semibold">1,234</div>
               <div class="text-sm dark:text-gray-300 dark:text-gray-300">Sales</div>
             </div>
           </div>
@@ -142,9 +142,9 @@
         dark:bg-gray-800 dark:text-gray-100 
         rounded-xl shadow-2xl overflow-hidden transition-colors duration-300">
           <div class="flex items-center gap-3 p-5">
-            <div class="text-3xl">💰</div>
+            <img src="revenue.png" class="h-10 w-10 sm:h-10 sm:w-10 md:h-12 md:w-12">
             <div>
-              <div class="text-2xl font-semibold">$42,780</div>
+              <div class="text-xl sm:text-2xl md:text-3xl font-semibold">$42,780</div>
               <div class="text-sm text-light-muted dark:text-gray-300">Revenue</div>
             </div>
           </div>
@@ -160,7 +160,7 @@
         </div>
 
         <div class="overflow-x-auto">
-          <table class="w-full min-w-[600px] text-sm">
+          <table class="w-full min-w-[600px] text-xs sm:text-sm md:text-base">
             <thead>
               <tr>
                 <th class="px-4 py-3 text-left text-light-muted dark:text-gray-300 ">User</th>
@@ -173,7 +173,7 @@
               <tr class="border-t border-[rgba(255,255,255,0.1)] dark:text-gray-100 dark:border-gray-600">
                 <td class="px-4 py-3 font-semibold">Hussein</td>
                 <td class="px-4 py-3 text-light-muted dark:text-gray-300 ">Purchased "Organic Apples"</td>
-                <td class="px-4 py-3 text-light-muted dark:text-gray-300 ">$24.00</td>
+                <td class="px-4 py-3 text-light-muted dark:text-gray-300 "> GH&#8373;24.00</td>
                 <td class="px-4 py-3 text-light-muted dark:text-gray-300 ">Sep 25, 2025</td>
               </tr>
               <tr class="border-t border-[rgba(255,255,255,0.1)] dark:text-gray-100  dark:border-gray-600">
@@ -191,7 +191,7 @@
               <tr class="border-t border-[rgba(255,255,255,0.1)] dark:text-gray-100 dark:border-gray-600">
                 <td class="px-4 py-3 font-semibold">Faisal</td>
                 <td class="px-4 py-3 text-light-muted dark:text-gray-300 ">Refunded order #2321</td>
-                <td class="px-4 py-3 text-light-muted dark:text-gray-300 ">-$15.00</td>
+                <td class="px-4 py-3 text-light-muted dark:text-gray-300 ">GH&#8373;15.00</td>
                 <td class="px-4 py-3 text-light-muted dark:text-gray-300 ">Sep 22, 2025</td>
               </tr>
             </tbody>
